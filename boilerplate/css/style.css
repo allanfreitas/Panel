@@ -140,37 +140,40 @@ header h1 {
     border: 1px solid #bebebe;
     width: 360px;
     margin: 150px auto;
-    padding: 1em;    
+    padding: 1em;
+    position: relative;
 }
     #login_box h2 {
         font-size: 22px;
         padding-bottom: 9px;
         border-bottom: 1px solid #bebebe;
     }
-    #login_box label { display: block; padding: 1em 0em 0.4em 0em; }
     #login_box input[type=text], #login_box input[type=password] {
         border: 1px solid #bebebe;
+        display: block;
+        margin: .5em 0 .5em 0;
+        padding: 5px;
         width: 350px;
         height: 30px;
-        font-size: 22px;
+        font-size: 18px;
     }
     #login_box input[type=text]:focus, #login_box input[type=password]:focus {
        -moz-box-shadow: 0px 0px 4px #A9A9A9;
        -webkit-box-shadow: 0px 0px 4px #A9A9A9;
         box-shadow: 0px 0px 4px #A9A9A9;
     }
-    #login_box input[type=submit] {
+    #login_box input[type=submit], #signup {
         background: #444;
-        border: 1px solid #bebebe;
-        color: #e5e5e5;
-        display: block;
-        padding: 0.4em;
-        margin-top: 17px;
+        border: none;
+        color: #e5e5e5;        
+        padding: 6px;
+        text-decoration: none;        
+        margin-right: 1em;
         -moz-border-radius: 4px;
         -webkit-border-radius: 4px;
         border-radius: 4px;
     }
-    #login_box input[type=submit]:hover {
+    #login_box input[type=submit]:hover, #signup:hover {
         background: #C4C4C4;
         color: #636363;
         -moz-transition: all 0.3s ease-out;
@@ -178,6 +181,44 @@ header h1 {
         -webkit-transition: all 0.3s ease-out;
     }
 
+/* Signup Box */
+.signup_box {
+    border: 1px solid #bebebe;
+    width: 360px;
+    margin: 20px auto;
+    padding: .5em;
+    position: relative;
+}
+    #main h1 {
+        font-size: 20px;
+        font-weight:bold;
+        text-align: center;
+        margin-top: 15px;
+    }
+    .signup_box legend {
+        color: #444;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .signup_box label {
+        display: block;
+        margin-bottom: .4em;
+    }
+    .signup_box input[type=text], .signup_box input[type=password]
+    {
+        border: 1px solid #bebebe;
+        display: block;
+        width: 350px;
+        height: 30px;
+        padding: 5px;
+        margin: .5em 0 .5em 0;
+        font-size: 16px;
+    }
+    .signup_box input[type=text]:focus, .signup_box input[type=password]:focus {
+        -moz-box-shadow: 0px 0px 4px #A9A9A9;
+        -webkit-box-shadow: 0px 0px 4px #A9A9A9;
+        box-shadow: 0px 0px 4px #A9A9A9;
+    }
 /* 
  * print styles
  */
